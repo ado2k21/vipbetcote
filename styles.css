@@ -1,0 +1,160 @@
+/* Barre de promotion */
+.promo-bar {
+  background-color: var(--promo-bg-color); /* Utilisation de la variable pour le fond */
+  color: var(--promo-text-color); /* Utilisation de la variable pour le texte */
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #FF512F, #DD2476, #FF9A44);
+  color: #000000;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header .cart a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav {
+  background: linear-gradient(135deg, #FF512F, #DD2476, #FF9A44);
+  color: #fff;
+  padding: 5px;
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.section  {
+  color: #000000;
+  background-color: #f3f3f3a9;
+  border: 1px solid #f3f3f3a9;
+  border-radius: 1px;
+  padding: 6px;
+  text-align: center;
+}
+
+.image-text, .text-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-text img, .text-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.plans {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan {
+  border: 1px solid #ee8989;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.plan button {
+  background: linear-gradient(135deg, #FF512F, #DD2476, #FF9A44);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+footer {
+  background: linear-gradient(135deg, #232526, #414345, #0F2027);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .trust-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer .contact-info {
+  margin: 10px 0;
+}
