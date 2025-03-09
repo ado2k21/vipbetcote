@@ -20,9 +20,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 7px 10px;
-  background: linear-gradient(135deg, #FF512F, #DD2476, #FF9A44);
-  color: #000000;
+  padding: 4px 10px;
+  background: #09757A;
+  color: #fff;
 }
 
 header .logo img {
@@ -42,7 +42,7 @@ header .cart a {
 nav {
   background: linear-gradient(135deg, #FF512F, #DD2476, #FF9A44);
   color: #fff;
-  padding: 3px;
+  padding: 1px;
   display: none;
 }
 
@@ -95,7 +95,7 @@ nav ul li a {
 }
 
 .plan button {
-  background: #0056b3;
+  background: #09757A;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -144,17 +144,21 @@ nav ul li a {
 }
 
 footer {
-  background: linear-gradient(135deg, #232526, #0F2027);
-  color: white;
-  text-align: center;
+  background: #000000;
+  color: #fff;
+  text-align: left;
   padding: 20px;
 }
 
 footer .trust-banner img {
   max-width: 100%;
+  text-align: left;
   height: auto;
 }
 
+footer .legal {
+  margin: 10px 0;
+}
 footer .contact-info {
   margin: 10px 0;
 }
