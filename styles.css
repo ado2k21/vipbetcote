@@ -60,19 +60,24 @@ nav ul li a {
 }
 
 .section  {
-  color: #000000;
-  background-color: #f3f3f3a9;
-  border: 1px solid #f3f3f3a9;
-  border-radius: 1px;
-  padding: 6px;
+  color: #111111;
+  background-color: #2001;
+  border: 1px solid #0975;
+  border-radius: 8px;
+  padding: 10px;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18977);
+    width: 90%; /* Largeur relative pour mobile */
+    margin: 20px auto;
+ font-size: 16px; /* Taille de police réduite pour mobile */
+    margin-bottom: 15px; 
 }
 
 .image-text, .text-image {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .image-text img, .text-image img {
@@ -144,7 +149,7 @@ nav ul li a {
 }
 
 footer {
-  background: #000000;
+  background: #111111;
   color: #fff;
   text-align: left;
   padding: 20px;
@@ -161,4 +166,108 @@ footer .legal {
 }
 footer .contact-info {
   margin: 10px 0;
+}
+
+/* Pied de page */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Bannière de confiance */
+.trust-banner {
+    background-color: #;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.trust-banner p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Liens utiles */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007BFF;
+}
+
+/* Copyright */
+.copyright {
+    border-top: 1px solid #34495e;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 12px;
+    color: #bdc3c7;
+}
+
+/* Responsive design pour les petits écrans */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .trust-banner p {
+        font-size: 12px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .footer-section ul li a {
+        font-size: 12px;
+    }
+
+    .copyright p {
+        font-size: 18px;
+    }
 }
