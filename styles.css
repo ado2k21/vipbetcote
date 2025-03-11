@@ -21,8 +21,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 4px 10px;
-  background: #09757A;
-  color: #fff;
+  background: #09759A;
+  color: #ffffffff;
 }
 
 header .logo img {
@@ -40,7 +40,7 @@ header .cart a {
 }
 
 nav {
-  background: linear-gradient(135deg, #FF512F, #DD2476, #FF9A44);
+  background: #09756A;
   color: #fff;
   padding: 1px;
   display: none;
@@ -56,7 +56,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 10px;
+  padding: 4px;
 }
 
 .section  {
