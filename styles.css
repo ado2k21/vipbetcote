@@ -40,7 +40,7 @@ header .cart a {
 }
 
 nav {
-  background: #09756A;
+  background: #09759A;
   color: #fff;
   padding: 1px;
   display: none;
@@ -268,6 +268,6 @@ footer {
     }
 
     .copyright p {
-        font-size: 18px;
+        font-size: 10px;
     }
 }
