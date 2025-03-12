@@ -195,6 +195,7 @@ footer {
 .footer-links {
     display: flex;
     flex-wrap: wrap;
+    font-size: 1px;
     justify-content: space-around;
     margin-bottom: 20px;
 }
@@ -268,6 +269,6 @@ footer {
     }
 
     .copyright p {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
