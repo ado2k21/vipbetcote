@@ -65,7 +65,7 @@ nav ul li a {
   border: 1px solid #0975;
   border-radius: 8px;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18977);
     width: 90%; /* Largeur relative pour mobile */
     margin: 20px auto;
