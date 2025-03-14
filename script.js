@@ -36,13 +36,13 @@ const messages = [
   "Nouvel achat +509******35",
   "Nouvel achat plan 30jou +509******19",
   "Nouvel achat plan 15jou +509******00",
-  "Nouvel achat plan a Vie +509******76",
-  "Nouvel achat plan a Vie +509******89",
+  "Nouvel achat plan à Vie +509******76",
+  "Nouvel achat plan à Vie +509******89",
   "Nouvel achat +509******40",
-  "Nouvel achat plan a Vie +509******05",
+  "Nouvel achat plan à Vie +509******05",
   "Nouvel achat plan 15jou +509******39",
   "Nouvel achat plan 5jou +509******09",
-  "Nouvel achat plan a Vie +509******15",
+  "Nouvel achat plan à Vie +509******15",
   "Nouvel achat +509******90",
   "Nouvel achat +509******62",
   "Nouvel achat plan 30jou +509******35"
@@ -63,8 +63,8 @@ function afficherPub() {
   }, 3000);
 }
 
-// Afficher le premier message après 15 secondes
+// Afficher la première pub après 15 secondes
 setTimeout(afficherPub, 15000);
 
-// Afficher les messages suivants toutes les 25 secondes
+// Afficher une pub toutes les 25 secondes après la première
 setInterval(afficherPub, 25000);

@@ -285,7 +285,7 @@ footer {
 .pub-text {
   color: #09757A;
   font-size: 13px;
-  opacity: 3;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
   font-weight: bold; /* Texte en gras */
 }
