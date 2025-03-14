@@ -33,21 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Liste des messages publicitaires
 const messages = [
-  "Nouvel achat plan 30jou",
-  "Nouvel achat plan 5jou",
-  "Nouvel achat plan 5jou",
-  "9 Nouvel achat plan 15jou",
-  "Nouvel achat plan a Vie",
-  "Nouvel achat plan a Vie",
-  "Nouvel achat plan 5jou",
-  "239 Nouvel achat jodia",
-  "Nouvel achat plan a Vie",
-  "Cote 248 valider hier",
-  "Nouvel achat plan 15jou",
-  "Nouvel achat plan 5jou",
-  "Nouvel achat plan a Vie",
-  "Nouvel achat plan 5jou",
-  "Yon abòne fè 33000gdes avanhier"
+  "Nouvel achat +509******35",
+  "Nouvel achat plan 30jou +509******19",
+  "Nouvel achat plan 15jou +509******00",
+  "Nouvel achat plan a Vie +509******76",
+  "Nouvel achat plan a Vie +509******89",
+  "Nouvel achat +509******40",
+  "Nouvel achat plan a Vie +509******05",
+  "Nouvel achat plan 15jou +509******39",
+  "Nouvel achat plan 5jou +509******09",
+  "Nouvel achat plan a Vie +509******15",
+  "Nouvel achat +509******90",
+  "Nouvel achat +509******62",
+  "Nouvel achat plan 30jou +509******35"
 ];
 
 // Fonction pour afficher un message aléatoire
@@ -65,8 +63,8 @@ function afficherPub() {
   }, 3000);
 }
 
-// Afficher la première pub après 15 secondes
+// Afficher le premier message après 15 secondes
 setTimeout(afficherPub, 15000);
 
-// Afficher une pub toutes les 25 secondes après la première
+// Afficher les messages suivants toutes les 25 secondes
 setInterval(afficherPub, 25000);

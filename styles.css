@@ -283,10 +283,11 @@ footer {
 
 /* Style pour le texte de la pub */
 .pub-text {
-  color: #09759A;
-  font-size: 12px;
-  opacity: 0;
+  color: #09757A;
+  font-size: 13px;
+  opacity: 3;
   transition: opacity 0.5s ease-in-out;
+  font-weight: bold; /* Texte en gras */
 }
 
 /* Classe pour afficher le texte */
