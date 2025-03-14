@@ -272,3 +272,24 @@ footer {
         font-size: 12px;
     }
 }
+
+/* Style pour le conteneur de la pub */
+#pub-container {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style pour le texte de la pub */
+.pub-text {
+  color: #09759A;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Classe pour afficher le texte */
+.show {
+  opacity: 1;
+}
