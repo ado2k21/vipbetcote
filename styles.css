@@ -134,10 +134,11 @@ nav ul li a {
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: #45d22b;
   border: none;
   padding: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .prev {
