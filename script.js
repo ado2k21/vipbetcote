@@ -68,3 +68,24 @@ setTimeout(afficherPub, 15000);
 
 // Afficher une pub toutes les 25 secondes après la première
 setInterval(afficherPub, 25000);
+
+// Désactiver le clic droit sur la page
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
+// Désactiver les raccourcis clavier (Ctrl+S, Ctrl+Shift+I, etc.)
+document.addEventListener('keydown', function (e) {
+    // Empêcher Ctrl+S (enregistrer)
+    if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+    }
+    // Empêcher Ctrl+Shift+I (outils de développement)
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+    }
+    // Empêcher Ctrl+U (afficher le code source)
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+    }
+});
