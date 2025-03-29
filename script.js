@@ -35,13 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
 const messages = [
   "Nouvel achat +509******35",
   "Nouvel achat plan 30jou +509******19",
+  "Nouvel achat +509******99",
   "Nouvel achat plan 15jou +509******00",
+  "Nouvel achat +509******54",
   "Nouvel achat plan à Vie +509******76",
+  "Nouvel achat +509******28",
   "Nouvel achat plan à Vie +509******89",
   "Nouvel achat +509******40",
   "Nouvel achat plan à Vie +509******05",
+  "Nouvel achat +509******20",
+  "Nouvel achat +509******11",
   "Nouvel achat plan 15jou +509******39",
+  "Nouvel achat +509******13",
   "Nouvel achat plan 5jou +509******09",
+  "Nouvel achat +509******22",
   "Nouvel achat plan à Vie +509******15",
   "Nouvel achat +509******90",
   "Nouvel achat +509******62",
@@ -63,11 +70,9 @@ function afficherPub() {
   }, 3000);
 }
 
-// Afficher la première pub après 15 secondes
-setTimeout(afficherPub, 15000);
 
 // Afficher une pub toutes les 25 secondes après la première
-setInterval(afficherPub, 25000);
+setInterval(afficherPub, 20000);
 
 // Désactiver le clic droit sur la page
 document.addEventListener('contextmenu', function (e) {
@@ -89,3 +94,12 @@ document.addEventListener('keydown', function (e) {
         e.preventDefault();
     }
 });
+// Animation supplémentaire pour le badge de réduction
+const discountBadge = document.querySelector('.discount-badge');
+
+setInterval(() => {
+    discountBadge.style.transform = 'scale(1.1)';
+    setTimeout(() => {
+        discountBadge.style.transform = 'scale(1)';
+    }, 300);
+}, 3000);

@@ -99,6 +99,47 @@ nav ul li a {
   text-align: center;
 }
 
+.price-display {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.current-price {
+    font-size: 3rem;
+    color: #1d3597;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.original-price {
+    font-size: 1.8rem;
+    color: #666;
+    font-weight: 500;
+    text-decoration: line-through;
+    top: -8px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: -100px;
+    right: -50px;
+    background: #e63946;
+    color: white;
+    padding: 1px 8px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .current-price {
+        font-size: 1.2rem;
+    }
+    
+    .original-price {
+        font-size: 0.9rem;
+    }
+
 .plan button {
   background: #09757A;
   color: #fff;
@@ -106,6 +147,7 @@ nav ul li a {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .slider {
@@ -149,12 +191,7 @@ nav ul li a {
   right: 15px;
 }
 
-footer {
-  background: #111111;
-  color: #fff;
-  text-align: left;
-  padding: 20px;
-}
+
 
 footer .trust-banner img {
   max-width: 100%;
@@ -162,19 +199,12 @@ footer .trust-banner img {
   height: auto;
 }
 
-footer .legal {
-  margin: 10px 0;
-}
-footer .contact-info {
-  margin: 10px 0;
-}
-
 /* Pied de page */
 footer {
     background-color: #2c3e50;
     color: #fff;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     margin-top: 40px;
 }
 
@@ -212,26 +242,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.footer-section ul li {
-    margin: 5px 0;
-}
-
-.footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    color: #007BFF;
-}
 
 /* Copyright */
 .copyright {
@@ -265,10 +276,7 @@ footer {
         font-size: 16px;
     }
 
-    .footer-section ul li a {
-        font-size: 12px;
-    }
-
+    
     .copyright p {
         font-size: 12px;
     }
@@ -284,7 +292,7 @@ footer {
 
 /* Style pour le texte de la pub */
 .pub-text {
-  color: #09757A;
+  color: #4e39f4;
   font-size: 13px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
