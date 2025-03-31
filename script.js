@@ -1,8 +1,18 @@
-// Menu mobile
+// JavaScript pour le menu déroulant
 function toggleMenu() {
-  const menu = document.querySelector('nav');
-  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
 }
+
+// Fermer le menu si on clique en dehors
+window.onclick = function(event) {
+    const menu = document.getElementById('menu');
+    if (!event.target.matches('.menu-button')) {
+        if (menu.classList.contains('active')) {
+            menu.classList.remove('active');
+        }
+    }
+};
 
 // Slider manuel
 let currentSlide = 0;

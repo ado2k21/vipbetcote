@@ -3,8 +3,8 @@
   background-color: var(--promo-bg-color); /* Utilisation de la variable pour le fond */
   color: var(--promo-text-color); /* Utilisation de la variable pour le texte */
   text-align: center;
-  padding: 5px;
-  font-size: 12px;
+  padding: 1px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -34,30 +34,59 @@ header .cart a {
   text-decoration: none;
 }
 
-.menu-icon {
-  font-size: 24px;
-  cursor: pointer;
+/* Menu déroulant */
+.menu {
+    position: relative;
+    display: inline-block;
 }
 
-nav {
-  background: #09759A;
-  color: #fff;
-  padding: 1px;
-  display: none;
+.menu-button {
+    background-color: #09759A;
+    color: #ffffff;
+    padding: 5px 5px; /* Taille de bouton réduite pour mobile */
+    font-size: 18px; /* Taille de police réduite pour mobile */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.menu-button:hover {
+    background-color: #01728A;
+    font-size: 18px; /* Taille de police réduite pour mobile */
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 4px;
+.menu-content {
+    display: none;
+    position: absolute;
+    right: 15;
+    background-color: #fff;
+    min-width: 120px; /* Largeur réduite pour mobile */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 100;
 }
+
+.menu-content a {
+    color: #09759A;
+    padding: 10px 20px; /* Espacement réduit pour mobile */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Taille de police réduite pour mobile */
+    font-weight: bold;
+}
+
+.menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Afficher le menu déroulant */
+.menu.active .menu-content {
+    display: block;
+}
+
 
 .section  {
   color: #111111;
@@ -123,7 +152,7 @@ nav ul li a {
 .discount-badge {
     position: absolute;
     top: -100px;
-    right: -50px;
+    right: -55px;
     background: #e63946;
     color: white;
     padding: 1px 8px;
