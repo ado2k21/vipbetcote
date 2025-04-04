@@ -113,3 +113,11 @@ setInterval(() => {
         discountBadge.style.transform = 'scale(1)';
     }, 300);
 }, 3000);
+
+// Vérifie que le logo est bien chargé
+document.addEventListener('DOMContentLoaded', function() {
+  const logo = document.querySelector('img[src*="logogoogle"]');
+  if (!logo) {
+    console.warn("Le logo principal n'a pas été trouvé");
+  }
+});
