@@ -216,57 +216,76 @@ header .cart a {
   text-align: center;
 }
 
-.price-display {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 8px;
-}
+    .price-display {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 8px;
+    }
 
-.current-price {
-    font-size: 6rem;
-    color: #1d3597;
-    font-weight: 900;
-    margin-right: 10px;
-}
+    .current-price {
+        font-size: 6rem;
+        color: #1d3597;
+        font-weight: 900;
+        margin-right: 10px;
+        position: relative;
+        display: inline-flex;
+        align-items: flex-start;
+        line-height: 1;
+    }
 
-.original-price {
-    font-size: 1.8rem;
-    color: #666;
-    font-weight: 500;
-    text-decoration: line-through;
-    top: -8px;
-}
+    .currency-symbol {
+        font-size: 2rem; /* Taille réduite */
+        align-self: flex-start; /* Alignement en haut */
+        margin-left: 2px; /* Espacement du prix */
+        transform: translateY(-0.01em); /* Décalage vers le haut */
+    }
 
-.discount-badge {
-    position: absolute;
-    top: -68px;
-    right: -41px;
-    background: #e63946;
-    color: white;
-    padding: 1px 8px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
+    .original-price {
+        font-size: 1.8rem;
+        color: #666;
+        font-weight: 500;
+        text-decoration: line-through;
+        top: -8px;
+        display: inline-block;
+    }
+
+    .discount-badge {
+        position: absolute;
+        top: -62px;
+        right: -59px;
+        background: #e63946;
+        color: white;
+        padding: 1px 8px;
+        border-radius: 15px;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
 .discount-badge1 {
     position: absolute;
     top: -70px;
-    right: 180px;
+    right: 145px;
     color: #094;
     padding: 1px 8px;
     border-radius: 3px;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: bold;
     border: 0px solid #09759A;
 }
 
-@media (max-width: 600px) {
-    .current-price {
-        font-size: 1.2rem;
-    }
-    
-    .original-price {
-        font-size: 0.9rem;
+
+    @media (max-width: 600px) {
+        .current-price {
+            font-size: 1.4rem; /* Ajusté pour mobile */
+        }
+        
+        .currency-symbol {
+            font-size: 1rem; /* Taille réduite sur mobile */
+        }
+        
+        .original-price {
+            font-size: 1rem;
+        }
     }
 
 .plan button {
@@ -432,7 +451,7 @@ footer {
 /* Style pour le texte de la pub */
 .pub-text {
   color: #4e39f4;
-  font-size: 13px;
+  font-size: 15px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   font-weight: bold; /* Texte en gras */

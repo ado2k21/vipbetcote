@@ -74,10 +74,10 @@ function afficherPub() {
   // Afficher le texte
   pubText.classList.add("show");
 
-  // Disparaître après 3 secondes
+  // Disparaître après 4 secondes
   setTimeout(() => {
     pubText.classList.remove("show");
-  }, 3000);
+  }, 4000);
 }
 
 
