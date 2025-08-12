@@ -89,9 +89,9 @@ header .cart a {
 
 
 .section  {
-  color: #111111;
-  background-color: #2001;
-  border: 1px solid #0975;
+  color: #2d3748;
+  background-color: #fff;
+  border: 1px solid #098;
   border-radius: 8px;
   padding: 10px;
   text-align: left;
@@ -100,6 +100,7 @@ header .cart a {
     margin: 20px auto;
  font-size: 16px; /* Taille de police réduite pour mobile */
     margin-bottom: 15px; 
+    font-family: 'inter', sans-rerif;
 }
 
  .liste-centree {
@@ -110,7 +111,7 @@ header .cart a {
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            margin-top: -30px;
+            margin-top: 25px;
         }
 
         .element-liste {
@@ -118,6 +119,7 @@ header .cart a {
             font-weight: bold;
             display: flex;
             margin-bottom: 10px;
+            margin-top: -10px;
         }
 
         .coche {
@@ -138,7 +140,8 @@ header .cart a {
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            margin-top: 30px;
+            margin-bottom: 10px;
+            margin-top: 5px;
         }
 
         .element-liste1 {
@@ -160,12 +163,32 @@ header .cart a {
         }
 
 /* Style du texte descriptif */
+        .description {
+            font-size: 16px;
+            color: #000;
+            margin-bottom: -2px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
         .description1 {
             font-size: 16px;
-            color: #666;
-            margin-bottom: 7px;
+            color: #2d3748;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            font-weight: bold;
+            margin-top: -15px;
+            margin-bottom: 2px;
+        }
+        .description4 {
+            font-size: 16px;
+            color: #2d3748;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin-top: -15px;
+            margin-bottom: 2px;
+        }
+        .description5 {
+            font-size: 16px;
+            color: #2d3748;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin-top: 5px;
+            margin-bottom: 17px;
         }
 
 .crossmark {
@@ -199,6 +222,7 @@ header .cart a {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .plans1 {
@@ -209,7 +233,7 @@ header .cart a {
 }
 
 .plan1 {
-  border: 1.3px solid #097;
+  border: 1.3px solid #00c14b;
   background: #E5EAE8;
   border-radius: 10px;
   padding: 15px;
@@ -219,6 +243,8 @@ header .cart a {
   margin-right: 180px;
   margin-top: 0px;
   font-size: 1.1rem;
+  color: #2d3748;
+  margin: 2rem 80;
 }
 .plan15 {
   margin-right: 160px;
@@ -262,8 +288,8 @@ header .cart a {
 
     .discount-badge {
         position: absolute;
-        top: -62px;
-        right: -59px;
+        top: -65px;
+        right: -45px;
         background: #e63946;
         color: white;
         padding: 1px 8px;
@@ -274,10 +300,10 @@ header .cart a {
 
 .discount-badge1 {
     position: absolute;
-    top: -126px;
+    top: -92px;
     right: 40px;
     color: #fff;
-    background: #097;
+    background: #098;
     padding: 2px 8px;
     border-radius: 80px;
     font-size: 0.9rem;
@@ -367,6 +393,13 @@ footer .trust-banner img {
   max-width: 100%;
   text-align: left;
   height: auto;
+}
+
+.trust-banner  {
+  max-width: 100%;
+  text-align: left;
+  height: auto;
+  background: #34495e;
 }
 
 /* Pied de page */
