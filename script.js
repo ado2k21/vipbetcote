@@ -121,3 +121,31 @@ document.addEventListener('DOMContentLoaded', function() {
     console.warn("Le logo principal n'a pas été trouvé");
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Sélectionne tous les icônes de réseaux sociaux
+    const socialIcons = document.querySelectorAll('.social-icon');
+    
+    // Ajoute un écouteur d'événement à chaque icône
+    socialIcons.forEach(icon => {
+        icon.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            if (url) {
+                window.open(url, '_blank');
+            }
+        });
+        
+        // Ajoute un effet au clavier pour l'accessibilité
+        icon.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const url = this.getAttribute('data-url');
+                if (url) {
+                    window.open(url, '_blank');
+                }
+            }
+        });
+        
+        // Rend les icônes focusables pour l'accessibilité
+        icon.setAttribute('tabindex', '0');
+    });
+});

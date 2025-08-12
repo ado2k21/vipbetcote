@@ -534,6 +534,77 @@ footer {
     font-weight: bold;
 }
 
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+#contact-banner {
+    
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+#contact-banner h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: -20px;
+   border-radius: 50%;   
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon svg {
+    width: 60%;
+    height: 100%;
+    fill: #fff;
+    transition: fill 0.3s ease;
+}
+
+/* Couleurs officielles des réseaux */
+.gmail { background: #EA4335; } /* Rouge Gmail */
+.instagram { 
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+} /* Dégradé Instagram */
+.whatsapp { background: #25D366; } /* Vert WhatsApp */
+.tiktok { background: #000000; } /* Noir TikTok */
+
+
+
+
+
+/* Version mobile */
+@media (max-width: 600px) {
+    .social-icons {
+        gap: 30px;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
 /* Liens utiles */
 .footer-links {
     display: flex;
