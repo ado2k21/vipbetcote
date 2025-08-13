@@ -43,7 +43,7 @@ header .cart a {
 .menu-button {
     background-color: #09759A;
     color: #ffffff;
-    padding: 5px 25px; /* Taille de bouton réduite pour mobile */
+    padding: 5px 16px; /* Taille de bouton réduite pour mobile */
     font-size: 23px; /* Taille de police réduite pour mobile */
     border: none;
     border-radius: 5px;
