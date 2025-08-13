@@ -235,9 +235,9 @@ header .cart a {
 }
 
 .plan1 {
-  border: 1.8px solid #00c14b;
-  background: #E5EAE8;
-  border-radius: 15px;
+  border: 2.4px solid #00c14b;
+  background: #c1fdd99d;
+  border-radius: 10px;
   padding: 15px;
   text-align: center;
   font-size: 0.9rem;
@@ -332,7 +332,7 @@ header .cart a {
 .buy-button {
   background: #111111;
   color: #fff;
-  padding: 10px 110px;
+  padding: 8px 110px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -340,14 +340,115 @@ header .cart a {
   margin-bottom: 50px;
 }
 .buy-button1 {
-  background: #097;
+  background: #535bff;
   color: #fff;
-  padding: 10px 110px;
+  padding: 8px 110px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
 }
+.buy-button2 {
+  background: #097;
+  color: #fff;
+  padding: 8px 110px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+/* Style général */
+.hm-premium-offer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 100px;
+    width: 85%;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    margin: 0px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.hm-premium-title {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.hm-price-tag {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f1c40f;
+    margin: 0px 0;
+    top: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+/* Boutons de paiement */
+.hm-payment-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.hm-payment-btn {
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hm-moncash-btn {
+    background-color: #FF6B00;
+    color: white;
+}
+
+.hm-stripe-btn {
+    background-color: #635bff;
+    color: white;
+}
+
+.hm-payment-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hm-payment-btn:active {
+    transform: translateY(1px);
+}
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hm-premium-offer {
+        padding: 20px;
+    }
+    
+    .hm-premium-title {
+        font-size: 1rem;
+    }
+    
+    .hm-price-tag {
+        font-size: 1.4rem;
+    }
+}
+
 
 .slider {
   position: relative;
@@ -550,7 +651,7 @@ main {
 #contact-banner h3 {
     color: #fff;
     margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .social-icons {
@@ -595,7 +696,7 @@ main {
 /* Version mobile */
 @media (max-width: 600px) {
     .social-icons {
-        gap: 30px;
+        gap: 20px;
     }
     
     .social-icon {

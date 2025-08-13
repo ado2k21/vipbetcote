@@ -149,3 +149,17 @@ document.addEventListener('DOMContentLoaded', function() {
         icon.setAttribute('tabindex', '0');
     });
 });
+
+function processPayment(gateway) {
+    // Remplacez ces URLs par vos vrais liens de paiement
+    const paymentLinks = {
+        moncash: "https://moncash.com/pay/haitianmindset",
+        stripe: "https://checkout.stripe.com/pay/haitianmindset"
+    };
+    
+    // Redirection vers le paiement
+    window.location.href = paymentLinks[gateway];
+    
+    // Alternative avec ouverture dans un nouvel onglet
+    // window.open(paymentLinks[gateway], '_blank');
+}
