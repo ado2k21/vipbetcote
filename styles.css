@@ -376,7 +376,8 @@ header .cart a {
 .hm-premium-title {
     font-size: 1rem;
     margin-bottom: 0px;
-    font-weight: 400;
+    font-weight: bold;
+    font-weight: 600;
 }
 
 .hm-price-tag {
